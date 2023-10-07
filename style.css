@@ -1167,6 +1167,21 @@ body {
     }
 
 
+    .portfolio-grid1 .layer h3 {
+        font-size: 23px;
+    }
+    
+    
+    .portfolio-grid1 .layer p {
+        font-size: 14px;
+    }
+    
+    
+    .portfolio-grid1 .layer i {
+        font-size: 17px;
+    }
+
+
     .portfolio-grid2 {
         grid-template-columns: 1fr;
         gap: 50px;
