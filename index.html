@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,600&family=Roboto:ital,wght@0,500;0,700;1,400&family=Work+Sans:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.0.7/css/boxicons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ffff251593.js" crossorigin="anonymous"></script>
+    <title>Portfolio website</title>
+</head>
+<body>
+    
+    <header>
+        <div class="nav">
+            <div class="nav-container">
+                <a class="logo" href="#section--1">
+                    Andrej
+                </a>
+
+                <ul class="nav__links">
+                    <li class="nav__item">
+                        <a class="nav__link active" href="#Home">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#About">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#Services">Services</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#Portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#Testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#Contact">Contact</a>
+                    </li>
+
+                </ul>   
+
+                <li class="toggle-moon">
+                    <i class='bx bx-moon'></i>
+                </li>
+                <i class="fa-solid fa-bars menu-btn"></i>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="all--section home--section" data-name="home" id="Home">
+        <div class="container">
+            <div class="introduc">
+                <h2>Hello, I <span class="span-text">am</span></h2>
+                <h1>Andrej Jović</h1>
+                <h3><span class="span-text span-text1">Front</span><span class="span-text2">-End Developer</span><span class="blinkingLine">|</span></h3>
+                <button class="btn home-btn"><a href="#">Contact me <i class="fa-solid fa-phone" style="color: #ffffff;"></i></a></button>
+
+                <div class="social-media">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <a href="https://www.linkedin.com/in/andrej-jovic/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <i class="fa-brands fa-discord"></i>
+                </div>
+            </div>
+
+
+            <div class="skills">
+                <div class="center"></div>
+                <img class="icon html-icon" src="img/html-5.png" alt="">
+                <img class="icon css-icon" src="img/css-3 (1).png" alt="">
+                <img class="icon js-icon" src="img/java-script.png" alt="">
+                <img class="icon webflow-icon" src="img/webflow.png" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="all--section about--section section--hidden" id="About">
+      
+        <div class="container">
+         
+            <img class="about-me-img" src="img/about-me.jpg" alt="">
+
+            <div class="about-me-inf">
+                <h2>About <span>Me</span></h2>
+                <h4>Hi, I am here to help your next project! </h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam natus suscipit ipsum dolorum beatae? Totam veniam id commodi similique dolores. Optio laboriosam aperiam assumenda pariatur dignissimos molestiae esse dolor neque.</p>
+                <button class="btn about-btn">Download CV <img src="img/download.png" alt=""></button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="all--section services--section section--hidden" id="Services">
+        <div class="container">
+            <h2>My <span>Services</span></h2>
+            <h5>What I offer</h5>
+            <div class="services-grid">
+                <div class="services-item">
+                    <i class="fa-brands fa-html5" style="color: #754EF9;"></i>
+                    <h3>Html5</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, ducimus ipsum!</p>
+                    <button class="btn services-btn" data-category="html">Read more <i class="fa-solid fa-arrow-right"></i></button>
+
+                    <div class="modal-window" data-category="html">
+                        <div class="close-btn">X</div>
+                        <h3>-HTML5</h3>
+                        <ul>
+                            <li><p>Lorem ipsum dolor, consectetur elit. Iure beatae quod magni. Inventore, dignissimo corrupti ullam.</p></li>
+                            <li><p>Lorem ipsum, elit Iure beatae quod magni. Inventore, dignissimos voluptatibus quidem, corrupti ullam.</p></li>
+                            <li><p>Lorem ipsum dolor, consectetur elit. Iure beatae quod magni. quidem, corrupti ullam.</p></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="services-item">
+                    <i class="fa-brands fa-css3-alt" style="color: #754EF9;"></i>
+                    <h3>Css3</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, ducimus ipsum!</p>
+                    <button class="btn services-btn" data-category="css">Read more <i class="fa-solid fa-arrow-right"></i></button>
+
+                    <div class="modal-window" data-category="css">
+                        <div class="close-btn">X</div>
+                        <h3>-CSS3</h3>
+                        <ul>
+                            <li><p>Lorem ipsum dolor, consectetur elit. Iure beatae quod magni. Inventore, dignissimo corrupti ullam.</p></li>
+                            <li><p>Lorem ipsum, elit Iure beatae quod magni. Inventore, dignissimos voluptatibus quidem, corrupti ullam.</p></li>
+                            <li><p>Lorem ipsum dolor, consectetur elit. Iure beatae quod magni. quidem, corrupti ullam.</p></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="services-item">
+                    <i class="fa-brands fa-square-js" style="color: #754EF9;"></i>
+                    <h3>JavaScript</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, ducimus ipsum!</p>
+                    <button class="btn services-btn"  data-category="js">Read more <i class="fa-solid fa-arrow-right"></i></button>
+
+                    <div class="modal-window" data-category="js">
+                        <div class="close-btn">X</div>
+                        <h3>-JAVASCRIPT</h3>
+                        <ul>
+                            <li><p>Lorem ipsum dolor, consectetur elit. Iure beatae quod magni. Inventore, dignissimo corrupti ullam.</p></li>
+                            <li><p>Lorem ipsum, elit Iure beatae quod magni. Inventore, dignissimos voluptatibus quidem, corrupti ullam.</p></li>
+                            <li><p>Lorem ipsum dolor, consectetur elit. Iure beatae quod magni. quidem, corrupti ullam.</p></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="services-item">
+                    <i class="fa-brands fa-solid fa-w" style="color: #754EF9;"></i>
+                    <h3>Webflow</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, ducimus ipsum!</p>
+                    <button class="btn services-btn" data-category="webflow">Read more <i class="fa-solid fa-arrow-right"></i></button>
+
+                    <div class="modal-window" data-category="webflow">
+                        <div class="close-btn">X</div>
+                        <h3>-WEBFLOW</h3>
+                        <ul>
+                            <li><p>Lorem ipsum dolor, consectetur elit. Iure beatae quod magni. Inventore, dignissimo corrupti ullam.</p></li>
+                            <li><p>Lorem ipsum, elit Iure beatae quod magni. Inventore, dignissimos voluptatibus quidem, corrupti ullam.</p></li>
+                            <li><p>Lorem ipsum dolor, consectetur elit. Iure beatae quod magni. quidem, corrupti ullam.</p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="all--section portfolio--section section--hidden" id="Portfolio">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <h5>Latest Project</h5>
+
+            <div class="portfolio-grid1">
+                <div class="work-item">
+                    <img src="img/work-5.jpg" alt="">
+
+                    <div class="layer">
+                        <h3>NFT marketplace</h3>
+                        <p>Lorem ipsum dolor sit amet. Veniam, mollitia! Eaque quos, et mollitia delectus unde, tempore
+                            sed est ipsum sit neque! Modi.</p>
+                        <a href="projects/NFT marketplace/index.html" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+
+                <div class="work-item">
+                    <img src="img/work-6.jpg" alt="">
+
+                    <div class="layer">
+                        <h3>Bank Website</h3>
+                        <p>Lorem ipsum dolor sit amet. Veniam, mollitia! Eaque quos, et mollitia delectus unde, tempore
+                            sed est ipsum sit neque! Modi.</p>
+                        <a href="projects/bankist-website/index.html" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="portfolio-grid2">
+
+                <div class="work-item">
+                    <img src="img/work-3.jpg" alt="">
+
+                    <div class="layer">
+                        <h3>Rolling Dice</h3>
+                        <p>Lorem amet. Veniam, mollitia! Eaque quos, et mollitia delectus unde, tempore
+                            sed neque! Modi.</p>
+                        <a href="projects/roling-dice/index.html" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+
+
+                <div class="work-item">
+                    <img src="img/work-2.jpg" alt="">
+
+                    <div class="layer">
+                        <h3>Bank App</h3>
+                        <p>Lorem ipsum dolor sit amet. Veniam eaque quos, ed unde, tempore
+                            sed est ipsum sit neque! Modi.</p>
+                        <a href="projects/bank-app/index.html" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+
+                          
+            <div class="work-item">
+                <img src="img/work-1.jpg" alt="">
+
+                <div class="layer">
+                    <h3>Social Media</h3>
+                    <p>Lorem ipsum dolor sit amet. Veniam, mollitia! Eaque quos, et mollitia delectus
+                        sed sit neque!</p>
+                    <a href="projects/drustvena-mreza/index.html" target="_blank"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            </div>          
+        </div>
+    </section>
+
+
+    
+    <section class="all--section testimonials--section section--hidden" id="Testimonials">
+        <div class="container">
+            <h2>Testimonials</h2>
+            <h5>What clients say</h5>
+
+            <div class="testimonial-slider">
+                <div class="slide">
+                    <img src="img/client3.jpg" alt="">
+
+                    <h3>Ava Willson</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor suscipit temporibus quam, voluptatem quis omnis. Facilis magni laboriosam fugit.</p>
+                </div>
+
+                <div class="slide">
+                    <img src="img/client1.jpg" alt="">
+
+                    <h3>Lucas Smith</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor suscipit temporibus quam, voluptatem quis omnis. Facilis magni laboriosam fugit.</p>
+                </div>
+
+                <div class="slide">
+                    <img src="img/client4.jpg" alt="">
+
+                    <h3>Oliver Perez</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor suscipit temporibus quam, voluptatem quis omnis. Facilis magni laboriosam fugit.</p>
+                </div>
+
+                <div class="slide">
+                    <img src="img/client2.jpg" alt="">
+
+                    <h3>Jackson Lee</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor suscipit temporibus quam, voluptatem quis omnis. Facilis magni laboriosam fugit.</p>
+                </div>
+
+                <div class="slide">
+                    <img src="img/client5.jpg" alt="">
+
+                    <h3>Emma Martinez</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor suscipit temporibus quam, voluptatem quis omnis. Facilis magni laboriosam fugit.</p>
+                </div>
+
+
+
+                <div class="left-arrow">&lt;</div>
+                <div class="right-arrow">&gt;</div>
+            </div>
+            <div class="dots"></div>
+ 
+        </div>
+    </section>
+
+
+
+    <section class="all--section contact--section section--hidden" id="Contact">
+        <div class="container">
+            <h2>Contact <span>Me</span></h2>
+            <h5>Get in Touch</h5>
+
+
+            <div class="form-conatiner">
+
+                <div class="contact-information-wrapper">
+                    <div class="contact-information">
+                        <i class="fa-solid fa-phone contact-icon"></i>
+
+                        <div>
+                            <h3>Call Me</h3>
+                            <h4>065/379-525</h4>
+                        </div>
+                    </div>
+
+                    <div class="contact-information">
+                        <i class="fa-regular fa-envelope contact-icon"></i>
+
+                        <div>
+                            <h3>Email</h3>
+                            <h4>andrej.jovic01@gmail.com</h4>
+                        </div>
+                    </div>
+
+                    <div class="contact-information">
+                        <i class="fa-solid fa-location-dot contact-icon"></i>
+
+                        <div>
+                            <h3>Location</h3>
+                            <h4>Banjaluka - BiH</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    
+                    <div class="contact-content">               
+                        <input placeholder="Name" type="text" class="contact-input" required>
+                    </div>
+
+                    <div class="contact-content">                           
+                        <input placeholder="Email" type="email" class="contact-input" required>
+                    </div>
+
+                    <div class="contact-content">                      
+                        <input placeholder="Project" type="text" class="contact-input">
+                    </div>
+
+                    <div class="contact-content contact-msg">            
+                        <textarea placeholder="Message" name="" id="" cols="0" rows="7" class="contact-input" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn contact-btn">
+                        Send Message
+                    </button>
+                </form>
+            </div>    
+
+        </div>
+    </section>
+
+
+    <footer>
+        <p>&copy;Copyright</p>
+    </footer>
+
+
+    <a href="#" class="scrollUp">
+        <i class='bx bxs-up-arrow-square' ></i>
+    </a>
+
+    <div class="overlay hidden"></div>
+
+      
+
+    <script src="script.js"></script>
+</body>
+</html>
