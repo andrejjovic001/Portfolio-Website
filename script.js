@@ -407,3 +407,21 @@ moonIcon.addEventListener('click', () => {
     moonIcon.classList.toggle('bx-sun');
     document.body.classList.toggle('dark-mode');
 })
+
+
+
+
+
+
+// Download CV
+const downloadCV = document.querySelector('.about-btn');
+const cvFile = 'andrej jović-CV.pdf'; 
+
+
+downloadCV.addEventListener('click', () => {
+    const downloadLink = document.createElement('a');
+    downloadLink.href = cvFile;
+    downloadLink.download = cvFile; 
+
+    downloadLink.click();
+});
