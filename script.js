@@ -379,7 +379,7 @@ const socialMedia = document.querySelector('.social-media');
 const skills = document.querySelector('.skills');
 
 
-window.addEventListener('load', () => {
+document.addEventListener('DOMContentLoaded', () => {
     nav.classList.add('nav-animation');
     home_h2_text.classList.add('h2-animation');
     home_h1_text.classList.add('h1-animation');
