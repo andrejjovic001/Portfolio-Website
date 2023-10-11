@@ -7,11 +7,17 @@ const menuBtn = document.querySelector('.menu-btn');
 const closeBtn = document.querySelector('.nav-close');
 
 
+
 let isOpen = false;
 const toggleMenu = function() {
 
-    if (!isOpen) navbar.style.right = '0'
-    else  navbar.style.right = '1000px';
+    if (!isOpen){
+        navbar.style.right = '0';
+        // document.body.style.overflow = 'hidden';
+    } else  {
+        navbar.style.right = '1000px'
+        // document.body.style.overflow = 'auto';
+    };
 
     isOpen = !isOpen;
 
@@ -19,6 +25,13 @@ const toggleMenu = function() {
 }
 
 menuBtn.addEventListener('click', toggleMenu);
+
+
+
+navbar.addEventListener('click', (e) => {
+    if (!e.target.classList.contains('nav__link')) return;
+    toggleMenu();
+})
 
 
 
@@ -38,7 +51,7 @@ const stickyNavAndScrollUp = function(entries) {
         scrollUpBtn.classList.add('showScroll');
     } 
     else {
-        nav.classList.remove('sticky')
+        nav.classList.remove('sticky');
         scrollUpBtn.classList.remove('showScroll');
     }
 }
@@ -55,8 +68,9 @@ headerObserver.observe(homeSection);
 
 
 
-// Add or remove active class on nav item
 
+
+// Add or remove active class on nav item
 function scrollActive(){
     const scrollY = window.pageYOffset   // Broj piksela od vrha stranice do trenutnog polozaja skrola
 
@@ -185,10 +199,13 @@ servicesContainer.addEventListener('click', (e) => {
 
 
 // Slider
+const slider = document.querySelector('.testimonial-slider');
 const slideItems = document.querySelectorAll('.slide');
 const leftArrow = document.querySelector('.left-arrow');
 const rightArrow = document.querySelector('.right-arrow');
 const dotsContainer = document.querySelector('.dots');
+let touchStartX;
+let touchEndX;
 
 
 let curSlide = 0;
@@ -276,6 +293,47 @@ document.addEventListener('keydown', (e) => {
 
 })
 
+
+
+
+
+slider.addEventListener('touchstart', handleTouchStart);
+slider.addEventListener('touchmove', handleTouchMove);
+slider.addEventListener('touchend', handleTouchEnd);
+
+
+function handleTouchStart(event) {
+    touchStartX = event.touches[0].clientX;
+}
+
+function handleTouchMove(event) {
+    touchEndX = event.touches[0].clientX;
+}
+
+
+
+function handleTouchEnd() {
+    if (touchStartX - touchEndX > 50) {
+        // Swipe u levo (sledeći slajd)
+        changeSlide('next');
+    } else if (touchStartX - touchEndX < -50) {
+        // Swipe u desno (prethodni slajd)
+        changeSlide('prev');
+    }
+}
+
+
+
+function changeSlide(direction) {
+    // Ako je korisnik "swipnuo" u levo, pređi na sledeći slajd
+    if (direction === 'next') {
+        nextSlide();
+    }
+    // Ako je korisnik "swipnuo" u desno, vrati se na prethodni slajd
+    else if (direction === 'prev') {
+        prevSlide();
+    }
+}
 
 
 

@@ -105,6 +105,7 @@ body {
     transform: translateY(-10px);
     opacity: 0;
     transition: transform 0.4s, opacity 0.4s;
+    z-index: 100;
 }
 
 
@@ -232,16 +233,17 @@ body {
         position: absolute;
         flex-direction: column;
         background-color: rgba(52, 52, 52, 0.236);
-        /* transform:scaleY(0); */
-        backdrop-filter: blur(25px);
+        background-color: var(--bg-color);
         right: 1000px;
         top: 70px;
         width: 100%;
-        z-index: 1;
+        z-index: 100;
         gap: 30px;
         padding: 40px 0;
-        transition: right 0.2s ease;
+        transition: right 0.4s ease;
+        border-bottom: 1px solid var(--text-color);
     }
+
 }
 
 
@@ -410,6 +412,8 @@ body {
         transform: translateY(0);
     }
 }
+
+
 
 
 
@@ -617,8 +621,8 @@ body {
     }
 
     .skills {
-        width: 230px;
-        height: 230px;
+        width: 250px;
+        height: 250px;
     }  
 
     .skills .icon {
@@ -1216,10 +1220,16 @@ body {
 
 
 
+
+.testimonial-slider-wrapper {
+    position: relative;
+}
+
+
+
 .testimonial-slider {
     position: relative;
     overflow: hidden;
-    /* border: 2px solid black; */
     height: 340px;
     padding: 5px 5px;
 }
@@ -1263,25 +1273,30 @@ body {
 }
 
 
+.arrow {
+    justify-content: center;
+    font-size: 19px;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    padding: 6px;
+    border-radius: 50%;
+    opacity: 0.6;
+}
+
+
 .left-arrow {
-    font-size: 40px;
-    /* color: rgba(0, 0, 0, 0.533); */
-    color: var(--text-color);
     position: absolute;
-    left: 6px;
-    top: 32%;
+    left: -34px;
+    top: 40%;
     cursor: pointer;
 }
 
 
 
 .right-arrow {
-    font-size: 40px;
-    /* color: rgba(0, 0, 0, 0.533); */
-    color: var(--text-color);
     position: absolute;
-    right: 6px;
-    top: 32%;
+    right: -34px;
+    top: 40%;
     cursor: pointer;
 }
 
@@ -1330,14 +1345,14 @@ body {
 
 
     .left-arrow {
-        left: 8px;
-    }
+        left: -34px;
+    } 
     
     
     
     .right-arrow {
-        right: 8px;
-    }
+        right: -31px;
+    } 
 }
 
 
@@ -1372,9 +1387,22 @@ body {
     
     .slide p {
         font-size: 13px;
-        /* color: var(--text-color); */
         font-weight: 400;
     }
+
+
+
+    .left-arrow {
+        top: 32%;
+        left: 8px;
+    } 
+    
+    
+    
+    .right-arrow {
+        top: 32%;
+        right: 8px;
+    } 
     
 
 }
