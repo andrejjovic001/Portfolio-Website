@@ -204,8 +204,6 @@ const slideItems = document.querySelectorAll('.slide');
 const leftArrow = document.querySelector('.left-arrow');
 const rightArrow = document.querySelector('.right-arrow');
 const dotsContainer = document.querySelector('.dots');
-let touchStartX;
-let touchEndX;
 
 
 let curSlide = 0;
@@ -295,12 +293,9 @@ document.addEventListener('keydown', (e) => {
 
 
 
-
-
-slider.addEventListener('touchstart', handleTouchStart);
-slider.addEventListener('touchmove', handleTouchMove);
-slider.addEventListener('touchend', handleTouchEnd);
-
+// Slider for mobile
+let touchStartX;
+let touchEndX;
 
 function handleTouchStart(event) {
     touchStartX = event.touches[0].clientX;
@@ -314,10 +309,9 @@ function handleTouchMove(event) {
 
 function handleTouchEnd() {
     if (touchStartX - touchEndX > 50) {
-        // Swipe u levo (sledeći slajd)
         changeSlide('next');
-    } else if (touchStartX - touchEndX < -50) {
-        // Swipe u desno (prethodni slajd)
+    } 
+    if (touchStartX - touchEndX < -50) {
         changeSlide('prev');
     }
 }
@@ -325,15 +319,19 @@ function handleTouchEnd() {
 
 
 function changeSlide(direction) {
-    // Ako je korisnik "swipnuo" u levo, pređi na sledeći slajd
     if (direction === 'next') {
         nextSlide();
     }
-    // Ako je korisnik "swipnuo" u desno, vrati se na prethodni slajd
     else if (direction === 'prev') {
         prevSlide();
     }
 }
+
+
+
+slider.addEventListener('touchstart', handleTouchStart);
+slider.addEventListener('touchmove', handleTouchMove);
+slider.addEventListener('touchend', handleTouchEnd);
 
 
 
