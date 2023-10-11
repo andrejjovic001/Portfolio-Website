@@ -1278,7 +1278,7 @@ body {
     font-size: 19px;
     background-color: var(--text-color);
     color: var(--bg-color);
-    padding: 6px;
+    padding: 5px 6px;
     border-radius: 50%;
     opacity: 0.6;
 }
