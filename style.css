@@ -85,7 +85,7 @@ body {
 
 @media (max-width: 500px) {
     .all--section {
-        padding: 70px 50px;
+        padding: 30px 20px;
     }
 }
 
@@ -361,9 +361,6 @@ body {
 }
 
 
-.social-media:hover  {
-    animation: none;
-}
 
 
 .social-media i {
@@ -406,7 +403,7 @@ body {
     }
 
     50% {
-        transform: translateY(4px);
+        transform: translateY(3px);
     }
 
     100% {
@@ -1020,7 +1017,6 @@ body {
     width: 100%;
     border-radius: 20px;
     overflow: hidden;
-    cursor: pointer;
 } 
 
 
@@ -1170,16 +1166,19 @@ body {
 
     .portfolio-grid1 .layer h3 {
         font-size: 23px;
+        margin-bottom: 15px;
     }
     
     
     .portfolio-grid1 .layer p {
         font-size: 14px;
+        margin-bottom: 17px;
     }
     
     
     .portfolio-grid1 .layer i {
         font-size: 17px;
+        padding: 9px;
     }
 
 
