@@ -830,7 +830,7 @@ body {
 .services-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 50px; 
+    gap: 40px; 
 }
 
 
@@ -845,13 +845,13 @@ body {
 
 
 .services-item .fa-brands{
-    font-size: 53px;
+    font-size: 54px;
     margin-bottom: 12px;
 }
 
 
 .services-item .fa-w {
-    font-size: 52px;
+    font-size: 51px;
 }
 
 
@@ -863,9 +863,8 @@ body {
 
 
 .services-item p {
-    font-size: 15px;
+    font-size: 14px;
     margin-bottom: 26px;
-    /* color: var(--text-color); */
 }
 
 
@@ -902,6 +901,12 @@ body {
 
 .modal-window h3 {
     text-align: center;
+}
+
+
+.modal-window ul li p {
+    font-size: 17px;
+    line-height: 32px;
 }
 
 
@@ -1071,7 +1076,7 @@ body {
 
 
 .portfolio-grid1 .layer p {
-    font-size: 18px;
+    font-size: 17px;
     color: rgba(255, 255, 255, 0.759);
     margin-bottom: 20px;
 }
@@ -1091,7 +1096,7 @@ body {
 
 
 .portfolio-grid2 .layer {
-    padding: 40px;
+    padding: 35px 30px;
 }
 
 
